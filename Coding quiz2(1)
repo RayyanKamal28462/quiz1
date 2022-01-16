@@ -1,0 +1,68 @@
+package mymethod;
+
+import java.util.Scanner;
+
+import java.util.Scanner;
+
+public class q21 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//1.    A company decided to give bonus of 5% to employee if his/her year of service is more than 5 years. 
+		//a.    Ask user for their salary and year of service and print the net bonus amount.
+		//b.    Take monthly salary from one employee and print the highest and the lowest salary.
+		//c.    Take input of age of 3 employees and determine oldest and youngest among them.
+		Scanner sc = new Scanner(System.in);
+		double netbonus=0;
+		double salary,salary1,salary2,salary3;
+		int year,year1,year2,year3;
+		
+		System.out.println("Company bonus 5% for more than 5 years");
+		System.out.println("Please enter your salary:RM" );
+		salary = sc.nextDouble();
+		
+		year = sc.nextInt();
+		System.out.println("Please enter your year of service:");
+		year = sc.nextInt();
+		if(year>5) {
+			netbonus = 5/100* salary;
+			System.out.println("Bonus is:" + netbonus);
+			
+		}else {
+			System.out.println("HAVE NO BONUS");
+		}
+		
+		System.out.println("Please enter your salary:RM");
+		salary1=sc.nextDouble();
+		System.out.println("Please enetr your year of service:");
+		year1=sc.nextInt();
+		System.out.println("Please your wage:RM");
+		salary2=sc.nextDouble();
+		System.out.println("Please your year of service:");
+		year2=sc.nextInt();
+		System.out.println("Please your wage:RM");
+		salary3=sc.nextDouble();
+		System.out.println("Please your year of service:");
+		year3=sc.nextInt();
+		
+		
+		if(salary1>salary2&&salary1>salary3) {
+			System.out.println(salary1);
+		}
+		else if(salary2>salary1&&salary2>salary3){
+			System.out.println(salary2);
+		}else if(salary3>salary1&&salary3>salary2){
+			System.out.println(salary3);
+		}
+		if(year1>year2&&year1>year3) {
+			System.out.println(year1);
+		}
+		else if(year2>year1&&year2>year3){
+			System.out.println(year2);
+		}else if(year3>year1&&year3>year2){
+			System.out.println(year3);
+		}
+
+	}
+
+}
